@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+      overflow-x: hidden;
+      transition: all 0.5s;
+     
+  }
+  main{
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+  main{
+    background-color: #ebf2ff;
+  }
+
+  #main_nav{
+    width: 100%;
+    line-height: 2;
+    height: 15vh;
+    position: relative;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .logo{
+    width: 500px;
+    height: 100px;
+    border-image-slice: fill;
+   }
+  .menu{
+    list-style: none;
+    display: flex;
+  }
+  .menu li a{
+    height: 40px;
+    line-height: 42px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #4169E1;
+  }
+  a{
+    text-decoration: none;
+  }
+  .menu li a:hover{
+    height: max-content;
+    background-color: #1E90FF;
+    color: white;
+    box-shadow: 8px 10px 30px rgba(24,139,119,0.2);
+    transition: all ease 0.2s;
+  }
+  .main{
+    /*background-image: url("https://images.shiksha.com/mediadata/images/articles/1553863816phpIB9bjK.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;*/
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .video__footage__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .video__footage {
+    position: relative;
+    z-index: 9999;
+  }
+  .prayer__video {
+    width: 100%;
+    height: 100%;
+  }
+  .video__footage__text {
+    font-family:'Della Respira', serif;
+    margin-top: 2rem;
+    color: #1d3557;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  .video__footage::before {
+    content: "";
+    background-image: linear-gradient(
+      to right,
+      #1E90FF 0%,
+      #0000CD 51%,
+      #4169E1 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0.5rem, 0.5rem);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .text_container{
+      margin-top: 20px;
+  }
+  .sample_text{
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+  }
+  .sam_text{
+    font-family: 'Della Respira', serif;
+    text-shadow: 2px 2px 5px #4169E1;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    font-size:xx-large;
+    text-decoration:overline;
+  }
+.role{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    color: blue;
+    font-size:x-large;
+    margin-left: 8rem;
+}
+.role_text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type:square;
+    font-size:x-large;
+    margin-left: 12rem;
+    line-height: 1.8;
+}
+.footer-distributed{
+	background: #4682B4;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+
+.footer-distributed h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color:  black;
+	font: normal 36px;
+	margin: 0 0 10px;
+}
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: black;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: black;
+}
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
